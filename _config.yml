@@ -1,0 +1,66 @@
+# Built with Jekyll 3.2.0
+
+# Setup
+title:               Educating Harlem
+tagline:             A Century of Schooling and Resistance in a Black Community
+description:         "This is a digital edition of Educating Harlem: A Century of Schooling and Resistance in a Black Community, Columbia University Press, 2019"
+
+# Change url for `jekyll build`, if deploying to test site on personal web server
+# url:                 'http://harlemeducationhistory.library.columbia.edu' # URL for Columbia's servers ONLY
+# baseurl:               '/book' # Base URL for Columbia's server
+
+# Host this site on GitHub
+url:                   'https://ansleyerickson.github.io'
+# url:                 'https://rklepper.github.io' # URL to host on Rachel's GitHub account
+baseurl:               '/educating-harlem' # Base URL for GitHub hosting ONLY
+
+# About/contact
+author:
+  name:              Harlem Education History Project
+  url:               http://harlemeducationhistory.library.columbia.edu
+  email:             harlemedhistory@tc.columbia.edu
+
+# Color scheme. Options: red, orange, magenta, cyan, blue, brown
+color-scheme:
+
+# Permalinks
+permalink: pretty
+permalink: /:title/
+
+# Set encoding to UTF-8
+encoding: utf-8
+
+# Collections for texts. Added a directory called _teaching so that I can include resource pages. Need to rename.
+collections:
+  chapters:
+    output: true
+  resources:
+    output: true
+
+# Markdown specs
+markdown: kramdown
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  footnote_backlink: "&#x21a9;&#xfe0e;"
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Exclusions from the final site
+exclude:
+  - optional
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - RAKEFILE
+  - README.md
+  - ed..gemspec
+
+# Theme
+# theme: "ed."
+
+# Theme for hosting on GitHub
+remote_theme: elotroalex/ed

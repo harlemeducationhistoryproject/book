@@ -1,0 +1,29 @@
+---
+layout: page
+title: Search
+---
+
+<form id="site_search">
+<br>
+<input id="search" type="text"/></form>
+
+<div id="results"></div>
+<ul id="search_results"></ul>
+<script src="{{site.baseurl}}/assets/js/elasticlunr.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/search.js"></script>
+<hr>
+<p>This search function is limited. Please follow these guidelines:</p>
+<ul>
+<li>Limit your search to one word</li>
+<li>Do not use quotation marks</li>
+<li>Do not press return</li></ul>
+<p>The results will appear hierarchically by frequency of occurences. Your search term will be highlighted within the chapter.</p>
+
+
+<!-- <script src="{{site.baseurl}}/assets/js/showdown.min.js"></script>
+<script type="text/javascript">
+	var converter = new showdown.Converter(),
+	str = $( "p" ).text(),
+    html = converter.makeHtml(text);
+</script> -->

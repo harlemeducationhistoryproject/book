@@ -1,0 +1,20 @@
+desc 'Simple tests'
+
+require 'colorize'
+require 'html-proofer'
+
+task :test do
+  puts 'Let\'s run some tests...'.green
+  sh "jekyll build"
+  options = { 
+    :assume_extension => true,
+    # :check_favicon => true,
+    :check_html => true,
+    # :external_only => true,
+    # :disable_external => true,
+    :allow_hash_href => true,
+    :only_4xx => true,
+    :external_only => true,
+    }
+  HTMLProofer.check_directory("./_site", options).run
+end
