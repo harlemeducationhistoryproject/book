@@ -12,7 +12,7 @@ description:         "This is a digital edition of Educating Harlem: A Century o
 # Host this site on GitHub
 url:                   'https://ansleyerickson.github.io'
 # url:                 'https://rklepper.github.io' # URL to host on Rachel's GitHub account
-baseurl:               '/educatingharlem' # Base URL for GitHub hosting ONLY
+baseurl:               '/' # Base URL for GitHub hosting ONLY
 
 # About/contact
 author:
